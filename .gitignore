@@ -1,0 +1,12 @@
+# Exclude weight folder and model checkpoints
+FINAL/weight/
+*.pt
+*.PT
+
+# Exclude large image data folder
+FINAL/data/data13k/
+
+# Exclude other data files (keep only rm_pairs_llava_13k.jsonl and rm_pairs_llava_hard.jsonl)
+FINAL/data/captioner_coco_lcs_sam_1246k_1107_coco_train.json
+FINAL/data/instruct_gpt4-vision_cap100k_coco_train.json
+FINAL/data/data_caption_raw/
