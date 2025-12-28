@@ -49,7 +49,6 @@ This encourages captions that are:
 ## Data Source
 The project uses **13,000 images** from the first training images of the **COCO 2017 dataset**.
 
-
 ### Download & Extract COCO Images
 To extract the 13k images from COCO train set, run:
 
@@ -58,8 +57,17 @@ python scripts/extract_coco_13k.py --output_dir FINAL/data/data13k
 ```
 
 This script:
-- Downloads COCO train2014 annotations
+- Downloads COCO train2017 annotations
 - Filters and extracts the first 13,000 images
 - Saves them to the specified output directory
 
 See `scripts/extract_coco_13k.py` for details and customization options.
+
+## Training Notebooks (Kaggle)
+Interactive training and experimentation notebooks are available on Kaggle:
+
+- **[RM Optimize](https://www.kaggle.com/code/sonjpro/rm-optimize)** — Reward model optimization and tuning
+- **[FT Basic RL using RM](https://www.kaggle.com/code/sonjpro/ft-basic-rl-using-rm)** — Reinforcement learning fine-tuning workflow
+- **[RL LLM V2](https://www.kaggle.com/code/tunhng223/rl-llm-v2)** — Advanced RL training pipeline
+
+These notebooks demonstrate the full training pipeline and can be run directly in Kaggle environments.
